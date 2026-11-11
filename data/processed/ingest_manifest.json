@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-11-11T21:26:05.133926+00:00",
+  "universe_path": "analytics/seeds/company_universe.csv",
+  "out_path": "analytics/seeds/sec_facts.csv",
+  "concept_map_path": "analytics/seeds/concept_map.csv",
+  "tickers_requested": 15,
+  "tickers_fetched": 15,
+  "rows": 68978,
+  "errors": [],
+  "per_ticker": [
+    {
+      "ticker": "JPM",
+      "cik": 19617,
+      "entity_name": "JPMORGAN CHASE & CO",
+      "sector": "Diversified Banks",
+      "rows": 4741
+    },
+    {
+      "ticker": "GS",
+      "cik": 886982,
+      "entity_name": "The Goldman Sachs Group, Inc.",
+      "sector": "Capital Markets",
+      "rows": 4154
+    },
+    {
+      "ticker": "MS",
+      "cik": 895421,
+      "entity_name": "MORGAN STANLEY",
+      "sector": "Capital Markets",
+      "rows": 6137
+    },
+    {
+      "ticker": "BAC",
+      "cik": 70858,
+      "entity_name": "BofA Finance LLC",
+      "sector": "Diversified Banks",
+      "rows": 5234
+    },
+    {
+      "ticker": "C",
+      "cik": 831001,
+      "entity_name": "Citigroup Inc",
+      "sector": "Diversified Banks",
+      "rows": 6102
+    },
+    {
+      "ticker": "WFC",
+      "cik": 72971,
+      "entity_name": "WELLS        FARGO & COMPANY/MN",
+      "sector": "Diversified Banks",
+      "rows": 4862
+    },
+    {
+      "ticker": "PNC",
+      "cik": 713676,
+      "entity_name": "PNC Financial Services Group, Inc.",
+      "sector": "Regional Banks",
+      "rows": 4371
+    },
+    {
+      "ticker": "USB",
+      "cik": 36104,
+      "entity_name": "US BANCORP \\DE\\",
+      "sector": "Regional Banks",
+      "rows": 5083
+    },
+    {
+      "ticker": "AXP",
+      "cik": 4962,
+      "entity_name": "AMERICAN EXPRESS CO",
+      "sector": "Consumer Finance",
+      "rows": 5009
+    },
+    {
+      "ticker": "COF",
+      "cik": 927628,
+      "entity_name": "CAPITAL\u00a0ONE\u00a0FINANCIAL\u00a0CORP",
+      "sector": "Consumer Finance",
+      "rows": 5233
+    },
+    {
+      "ticker": "V",
+      "cik": 1403161,
+      "entity_name": "VISA INC.",
+      "sector": "Payments",
+      "rows": 4512
+    },
+    {
+      "ticker": "MA",
+      "cik": 1141391,
+      "entity_name": "Mastercard Incorporated",
+      "sector": "Payments",
+      "rows": 6081
+    },
+    {
+      "ticker": "PYPL",
+      "cik": 1633917,
+      "entity_name": "PayPal Holdings, Inc.",
+      "sector": "Payments",
+      "rows": 3889
+    },
+    {
+      "ticker": "COIN",
+      "cik": 1679788,
+      "entity_name": "Coinbase Global, Inc.",
+      "sector": "Financial Services",
+      "rows": 1815
+    },
+    {
+      "ticker": "SOFI",
+      "cik": 1818874,
+      "entity_name": "SoFi Technologies, Inc.",
+      "sector": "Financial Services",
+      "rows": 1755
+    }
+  ],
+  "sha256": "bc99465e1cc5e497584aefb2d008c717adad8bc915ae4bc8971e9563a9515296"
+}

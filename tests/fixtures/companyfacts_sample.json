@@ -1,0 +1,195 @@
+{
+  "cik": 12345,
+  "entityName": "Example Financial Corp",
+  "facts": {
+    "us-gaap": {
+      "Revenues": {
+        "label": "Revenues",
+        "units": {
+          "USD": [
+            {
+              "start": "2024-01-01",
+              "end": "2024-12-31",
+              "val": 1000000,
+              "accn": "0001234567-24-000001",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-01",
+              "frame": "CY2024"
+            },
+            {
+              "start": "2024-01-01",
+              "end": "2024-12-31",
+              "val": 1000000,
+              "accn": "0001234567-24-000002",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "NetIncomeLoss": {
+        "label": "Net Income (Loss)",
+        "units": {
+          "USD": [
+            {
+              "start": "2024-01-01",
+              "end": "2024-12-31",
+              "val": 120000,
+              "accn": "0001234567-24-000002",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "OperatingIncomeLoss": {
+        "label": "Operating Income (Loss)",
+        "units": {
+          "USD": [
+            {
+              "start": "2024-01-01",
+              "end": "2024-12-31",
+              "val": 180000,
+              "accn": "0001234567-24-000002",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "Assets": {
+        "label": "Assets",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 5000000,
+              "accn": "0001234567-24-000002",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "Liabilities": {
+        "label": "Liabilities",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 3000000,
+              "accn": "0001234567-24-000002",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "StockholdersEquity": {
+        "label": "Stockholders' Equity",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 2000000,
+              "accn": "0001234567-24-000002",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "NetCashProvidedByUsedInOperatingActivities": {
+        "label": "Net Cash Provided by Used in Operating Activities",
+        "units": {
+          "USD": [
+            {
+              "start": "2024-01-01",
+              "end": "2024-12-31",
+              "val": 220000,
+              "accn": "0001234567-24-000002",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "PaymentsToAcquirePropertyPlantAndEquipment": {
+        "label": "Payments to Acquire Property, Plant, and Equipment",
+        "units": {
+          "USD": [
+            {
+              "start": "2024-01-01",
+              "end": "2024-12-31",
+              "val": 40000,
+              "accn": "0001234567-24-000002",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "EarningsPerShareBasic": {
+        "label": "Earnings Per Share, Basic",
+        "units": {
+          "USD/shares": [
+            {
+              "start": "2024-01-01",
+              "end": "2024-12-31",
+              "val": 1.25,
+              "accn": "0001234567-24-000002",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "UnmappedExperimentalConcept": {
+        "label": "Unmapped",
+        "units": {
+          "USD": [
+            {
+              "start": "2024-01-01",
+              "end": "2024-12-31",
+              "val": 1,
+              "accn": "0001234567-24-000002",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

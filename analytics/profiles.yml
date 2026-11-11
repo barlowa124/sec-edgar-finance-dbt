@@ -1,0 +1,7 @@
+sec_edgar_finance:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: data/warehouse/edgar.duckdb
+      threads: 4

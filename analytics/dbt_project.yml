@@ -1,0 +1,49 @@
+name: sec_edgar_finance
+version: 0.1.0
+profile: sec_edgar_finance
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+
+seeds:
+  sec_edgar_finance:
+    company_universe:
+      +column_types:
+        ticker: varchar
+        sector: varchar
+    concept_map:
+      +column_types:
+        concept: varchar
+        metric: varchar
+        statement: varchar
+        unit_kind: varchar
+        priority: integer
+    sec_facts:
+      +column_types:
+        cik: bigint
+        ticker: varchar
+        entity_name: varchar
+        taxonomy: varchar
+        concept: varchar
+        concept_label: varchar
+        unit: varchar
+        fact_start: varchar
+        fact_end: varchar
+        val: double
+        accn: varchar
+        fy: integer
+        fp: varchar
+        form: varchar
+        filed: varchar
+        frame: varchar
+        retrieved_at: varchar
+
+models:
+  sec_edgar_finance:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

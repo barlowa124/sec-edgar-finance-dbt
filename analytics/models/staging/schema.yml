@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_sec_facts
+    description: Cleaned SEC companyfacts rows restricted to mapped concepts.
+    columns:
+      - name: ticker
+        tests:
+          - not_null
+      - name: concept
+        tests:
+          - not_null
+      - name: period_end
+        tests:
+          - not_null
+      - name: val
+        tests:
+          - not_null
+      - name: taxonomy
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["us-gaap"]

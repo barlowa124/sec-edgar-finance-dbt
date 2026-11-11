@@ -1,0 +1,83 @@
+version: 2
+
+models:
+  - name: mart_metric_history
+    description: Deduped canonical metric history for all mapped SEC facts.
+    columns:
+      - name: ticker
+        tests:
+          - not_null
+      - name: metric
+        tests:
+          - not_null
+      - name: period_end
+        tests:
+          - not_null
+      - name: val
+        tests:
+          - not_null
+
+  - name: mart_balance_sheet
+    description: Instant balance-sheet metrics pivoted by ticker and period end.
+    columns:
+      - name: ticker
+        tests:
+          - not_null
+      - name: period_end
+        tests:
+          - not_null
+      - name: period_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["instant"]
+
+  - name: mart_income_statement
+    description: Duration income-statement metrics pivoted by ticker and period.
+    columns:
+      - name: ticker
+        tests:
+          - not_null
+      - name: period_start
+        tests:
+          - not_null
+      - name: period_end
+        tests:
+          - not_null
+      - name: period_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["FY", "Q", "other"]
+
+  - name: mart_cash_flow
+    description: Duration cash-flow metrics pivoted by ticker and period.
+    columns:
+      - name: ticker
+        tests:
+          - not_null
+      - name: period_start
+        tests:
+          - not_null
+      - name: period_end
+        tests:
+          - not_null
+      - name: period_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["FY", "Q", "other"]
+
+  - name: mart_financial_screen
+    description: Latest fiscal-year screen with valuation-style ratios computed from reported facts.
+    columns:
+      - name: ticker
+        tests:
+          - not_null
+          - unique
+      - name: period_end
+        tests:
+          - not_null
+      - name: revenue
+        tests:
+          - not_null

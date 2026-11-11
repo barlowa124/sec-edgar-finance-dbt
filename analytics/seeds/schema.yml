@@ -1,0 +1,55 @@
+version: 2
+
+seeds:
+  - name: company_universe
+    description: Ticker universe resolved through SEC company_tickers.json.
+    columns:
+      - name: ticker
+        tests:
+          - not_null
+          - unique
+      - name: sector
+        tests:
+          - not_null
+
+  - name: concept_map
+    description: Mapping from SEC XBRL concepts to canonical metrics.
+    columns:
+      - name: concept
+        tests:
+          - not_null
+          - unique
+      - name: metric
+        tests:
+          - not_null
+      - name: statement
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["income", "balance", "cash_flow"]
+      - name: unit_kind
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["usd", "usd_per_share", "shares"]
+      - name: priority
+        tests:
+          - not_null
+
+  - name: sec_facts
+    description: Generated SEC companyfacts extract for mapped concepts.
+    columns:
+      - name: ticker
+        tests:
+          - not_null
+      - name: concept
+        tests:
+          - not_null
+      - name: fact_end
+        tests:
+          - not_null
+      - name: val
+        tests:
+          - not_null

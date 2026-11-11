@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sec-edgar-finance-dbt"
+version = "0.1.0"
+description = "SEC EDGAR XBRL financial data pipeline with dbt, DuckDB, and FastAPI"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+  "duckdb>=1.1,<3",
+  "fastapi>=0.115",
+  "pydantic>=2.7",
+  "uvicorn[standard]>=0.30",
+]
+
+[project.optional-dependencies]
+analytics = [
+  "dbt-core>=1.8,<2",
+  "dbt-duckdb>=1.8,<2",
+]
+dev = [
+  "httpx>=0.27",
+  "pytest>=8",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+edgar-finance = "edgar_finance.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
